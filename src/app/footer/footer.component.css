@@ -1,0 +1,108 @@
+footer {
+  background-color: #283593;
+  width: 1024px;
+  height: 314px;
+  color: white;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.background__footer {
+  width: 1024px;
+  height: 85px;
+  border-bottom: 1px solid #5674b9;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__logo img {
+  width: 136px;
+  height: 24px;
+  margin-left: 48px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 824px;
+  height: 85px;
+}
+
+.footer__nav a {
+  margin-right: 29px;
+}
+
+/* --------------- */
+.footer__links,
+.footer__email {
+  display: flex;
+  flex-direction: column;
+}
+.footer__network,
+.footer__link,
+.footer__share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: right;
+
+}
+.footer__link{
+  margin: 23px 40px 0 0;
+}
+
+.footer__share{
+  margin: 15px 43px 0 0;
+}
+
+.footer__email {
+  text-align: left;
+  margin: 0 10px 0px 48px;
+}
+
+.footer__email a {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+
+
+}
+
+.footer__mail,
+.footer__phone,
+.footer__mobile {
+  margin: 0 10px 19px 0px;
+}
+
+.footer__email img {
+  margin-right: 10px;
+}
+
+
+.footer__links a {
+  margin: 0px 6px 11px 6px;
+}
+
+.footer__design {
+  font-size: 12px;
+  margin-left: 48px;
+  margin-top: 10px;
+}
+.footer__network img{
+margin-left: 20px;
+}

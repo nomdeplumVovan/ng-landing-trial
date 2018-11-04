@@ -1,0 +1,193 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+}
+
+.background__header {
+  width: 1024px;
+  height: 65px;
+}
+
+.register__h1 {
+  font-family: Overpass;
+  color: #000000;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin: 42px 0 0 1px;
+}
+
+.register__h3 {
+  font-family: 'Source Sans Pro';
+  color: #010000;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  height: 18px;
+  margin: 11px 0 61px 0;
+}
+
+form {
+  width: 1024px;
+}
+
+.register__user {
+  display: flex;
+  margin-left: 40px;
+  justify-content: flex-start;
+}
+
+fieldset {
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #b7b7b7;
+  border-style: solid;
+  width: 288px;
+  height: 58px;
+
+}
+
+fieldset:first-child {
+  margin: 0 30px 42px 7px;
+}
+
+
+fieldset:nth-child(2) {
+  margin: 0 30px 42px 0px;
+}
+
+legend {
+  font-family: 'Source Sans Pro';
+  color: #8d8c8c;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 18px;
+}
+
+.item-a {
+  border: none;
+  background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+fieldset input {
+  padding-left: 17px;
+  line-height: 30px;
+  width: 250px;
+  height: 40px;
+  outline: none;
+}
+
+.item-d {
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #b7b7b7;
+  border-style: solid;
+  width: 448px;
+  height: 54px;
+  display: flex;
+}
+
+/* --стилизация caret-select----------- */
+select {
+  font-size: 16px;
+  padding-left: 12px;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0 32px 8px 0px;
+}
+
+.register__select-caret {
+  width: 448px;
+  overflow: hidden;
+  background: url(../../assets/icons/caret.png) no-repeat right;
+  width: 448px;
+  height: 54px;
+  margin: 0 30px 0px 12px;
+}
+
+/* ---стилизация инпута----------*/
+
+.upload__style{
+  align-items: center;
+  justify-content: flex-end;
+}
+.item-d input {
+  width: 126px;
+  height: 54px;
+  letter-spacing: 10em;
+  cursor: pointer;
+  z-index: 1;
+  background: transparent;
+  outline: none;
+  position: relative;
+}
+
+.register__user label {
+  width: 350px;
+  color: #8d8c8c;
+  font-size: 16px;
+  text-align: center;
+}
+
+.item-d .button {
+  z-index: 5;
+  position: absolute;
+  cursor: pointer;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-width: 2px;
+  border-color: #ef6c00;
+  border-style: solid;
+  width: 126px;
+  height: 52px;
+  font-family: 'Source Sans Pro';
+  color: #ef6c00;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+/* ------------------------------------- */
+
+.register__user-warning {
+  font-family: 'Source Sans Pro';
+  color: #8d8c8c;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 41px 543px;
+}
+
+.signUp {
+  border-radius: 4px;
+  background-color: #d7d7d7;
+  width: 290px;
+  height: 40px;
+  color: #8d8c8c;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 138px;
+  outline: none;
+}
+
+.item-d option {
+  font-family: 'Source Sans Pro';
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  outline: none;
+}

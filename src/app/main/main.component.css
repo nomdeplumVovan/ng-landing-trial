@@ -1,0 +1,250 @@
+.background__header {
+  width: 1024px;
+  height: 65px;
+}
+
+/* assigment------------- */
+.main__assigment {
+  width: 1024px;
+  height: 724px;
+  background-image: url('../../assets/image/bg-1.jpg');
+  background-size: 129.6%;
+  font-family: 'Overpass', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  text-align: left;
+}
+
+.main__assigment-h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: justify;
+  width: 444px;
+  height: 173px;
+  line-height: 60px;
+  margin-left: 47px;
+  margin-top: 133px;
+}
+
+.main__assigment-goodluck {
+  font-family: 'Source Sans Pro';
+  width: 444px;
+  height: 150px;
+  margin: 25px 0 45px 48px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 26px;
+  text-align: left;
+}
+
+.main__assigment-button {
+  margin-left: 48px;
+  border-radius: 4px;
+  background-color: #ef6c00;
+  width: 290px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+}
+
+.main__assigment-button .signUp {
+  font-family: 'Source Sans Pro';
+  color: #fefefe;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.signUp {
+  border-radius: 4px;
+  background-color: #ef6c00;
+  width: 290px;
+  height: 40px;
+  color: #fefefe;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-decoration: none;
+  outline: none;
+
+}
+
+/*  about me--------------------- */
+
+
+
+.main__relationships {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__relationships-head,
+.main__relationships-h1 {
+  font-family: Overpass;
+  color: #000000;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 49px;
+  text-align: center;
+  width: 380px;
+  margin: 70px 0 19px 0;
+  /* margin-top: 70px;
+  margin-bottom: 19px; */
+}
+
+.main__relationships-h1 {
+  width: 537px;
+  margin: 55px 0 46px 0;
+  line-height: 50px;
+}
+
+
+.main__description {
+  display: flex;
+  flex-direction: row;
+  width: 1024px;
+
+}
+
+.main__description-img {
+  margin: 4px 31px 0 48px;
+
+}
+
+.main__description-dev-h2 {
+  font-family: Overpass;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 49px;
+  text-align: justify;
+  width: 335px;
+  margin-top: 13px;
+}
+
+.main__description-dev-about {
+  font-family: 'Source Sans Pro';
+  color: #4c4b4b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  width: 614px;
+  height: 148px;
+  margin-bottom: 18px;
+}
+
+.main__description-dev-about p {
+  padding-bottom: 22px;
+}
+
+.main__description .signUp {
+  color: #ef6c00;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fefefe;
+  border: none;
+  width: 88px;
+  margin-top: 22px;
+  outline: none;
+}
+
+.main__relationships-skills {
+  display: flex;
+  width: 1024px;
+  justify-content: flex-start;
+  margin-bottom: 73px;
+}
+
+.main__relationships-html {
+  width: 286px;
+  margin: 0 0 0 47px;
+}
+
+.main__relationships-css {
+  width: 248px;
+  margin: 0 73px 0 36px;
+}
+
+
+.main__relationships-javascript {
+  width: 288px;
+  margin-right: 50px;
+}
+
+.main__relationships-css img,
+.main__relationships-html img {
+  width: 98px;
+  height: 111px;
+}
+
+.main__relationships-javascript img {
+  width: 100px;
+  height: 114px;
+}
+.main__relationships-skills
+ .main__description-dev-h2{
+   line-height: 47px
+ }
+.main__relationships-javascript
+ .main__description-dev-h2 {
+  margin-top: 11px;
+}
+.main__relationships-skills p{
+  font-family: 'Source Sans Pro';
+  color: #4c4b4b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+.main__relationships-html p {
+margin-left: 2px;
+}
+.main__relationships-css p {
+ width: 219px;
+}
+.main__relationships-javascript p{
+  width: 263px;
+}
+
+
+.main__requirements {
+  background-image: url("../../assets/image/jonathan-simcoe-125293-unsplash.png");
+  width: 1024px;
+  height: 755px;
+  color: #fefefe;
+}
+
+.main__requirements-description-h2 {
+  color: #fefefe;
+  text-align: center;
+  font-family: Overpass;
+  font-size: 42px;
+  font-weight: 400;
+  padding-top: 133px;
+  margin-bottom: 25px;
+}
+
+.main__requirements-description {
+  display: flex;
+  flex-direction: row;
+  margin: 36px 0 0 47px;
+}
+
+.main__requirements-description p {
+  width: 449px;
+  line-height: 22px;
+  margin: 0 53px 22px  0;
+
+}
+.main__requirements-description img{
+  width: 429px;
+  height: 361px;
+  margin: 16px 0 0 1px;
+}

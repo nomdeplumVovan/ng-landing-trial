@@ -1,0 +1,50 @@
+<div class="register"><a name="signUp"></a>
+
+  <div class="background__header"></div>
+
+  <div class="register__h1">Register to get a work</div>
+  <div class="register__h3">Attention! After successful registration and alert,
+    update the list of users in the block from the top</div>
+  <form action="">
+    <div class="register__user">
+      <fieldset>
+        <legend>Name</legend>
+        <input type="text" placeholder="Your name" id="" class="item-a" maxlength="100" required="required">
+      </fieldset>
+      <fieldset>
+        <legend>Email</legend>
+        <input type="email" placeholder="Your email" id="" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+          class="item-a" maxlength="60" required="required">
+      </fieldset>
+      <fieldset>
+        <legend>Phone</legend>
+        <input type="tel" placeholder="+38 (___)  ___ __ __" id="" pattern="^[\+]{0,1}380([0-9]{9})$" class="item-a"
+          maxlength="19" required="required" title="Вы не верно ввели номер мобильного телефона, повторите ввод в формате +38 (___)  ___ __ __">
+      </fieldset>
+    </div>
+
+    <div class="register__user">
+      <div class="register__select-caret ">
+        <select name="" id="" class="item-d" required="required">
+          <option disabled>Select your position</option>
+          <option value="" *ngFor="let position of positions" [value]="position"> {{position.name}} </option>
+        </select>
+      </div>
+
+      <div class="item-d upload__style">
+        <label for="input__file">{{selectedFile}}</label>
+        <input type="file" name="" id="input__file" class="item-d__input"
+         accept="image/jpeg,image/png,image/gif" [(ngModel)]='selectedFile'
+          required="required">
+        <label  class="button">Upload</label>
+
+      </div>
+
+    </div>
+    <div class="register__user-warning">
+      <p>File format jpg up to 5 MB, the minimum size of 70x70px</p>
+    </div>
+
+  </form>
+  <button type="submit" class="signUp">Sign up</button>
+</div>

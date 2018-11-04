@@ -1,0 +1,28 @@
+<div class="users">
+  <a name="users"></a>
+  <div class="background__header"></div>
+  <div class="users__h1">Our cheerful users</div>
+  <div class="users__h3">Attention! Sorting users by registration date</div>
+
+  <div class="users__grid">
+
+    <div class="user" *ngFor='let user of users'>
+      <img [src]="user.photo" alt="">
+      <div class="user__account" [id]='user.id'>
+        <div class="user__name">{{user.name}}</div>
+        <div class="user__description">{{user.position}}</div>
+        <a class="user__mail" [href]="'mailto:'+ user.email">{{user.email}}</a>
+        <a class="user__tel" [href]="'tel:' + user.phone">{{user.phone}}</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- <div class="showMore"> -->
+  <button class="showMore" 
+  (click)="clickGetMore()" 
+  [disabled]="page > (pagesCount - 1)" 
+  [ngClass]="{disabled: (page > (pagesCount - 1))}">
+    Show more </button>
+  <!-- </div> -->
+</div>
+
