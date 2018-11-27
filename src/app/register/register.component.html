@@ -5,7 +5,7 @@
   <div class="register__h1">Register to get a work</div>
   <div class="register__h3">Attention! After successful registration and alert,
     update the list of users in the block from the top</div>
-  <form action="#" name="register-form"  novalidate   [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+  <form action="#" name="register-form"  novalidate   [formGroup]="myForm" (ngSubmit)="onSubmit()">
       <!-- (ngSubmit)="submit()" -->
     <div class="register__user">
       <fieldset>
@@ -51,7 +51,7 @@
             position invalid  
           </div>
         </label> 
-        <select  required name="userPosition"    id="selectPosition"  formControlName="userPosition" (ngModelChange)="onPositionChange($event)">
+        <select  required name="userPosition"    id="selectPosition"  formControlName="userPosition" (ngModelChange)="onPositionChange()">
           <option value="" disabled  >Select your position </option>
           <option *ngFor="let position of positions" [value]="position.name" [id]="position.id"> {{position.name}}
           </option>
@@ -67,7 +67,7 @@
           </div>
         </label> 
         <input type="file" name="userPhoto" id="input__file" class="item-d__input" accept="image/jpeg,image/png,image/gif"
-          formControlName="userPhoto" [formControl]='photoControl' (ngModelChange)="onPhotoChange($event)">
+          formControlName="userPhoto" [formControl]='photoControl' (ngModelChange)="onPhotoChange()">
         <label for="input__file" class="button" (click)='uploadImage()'>Upload</label>
 <!-- (ngModelChange)="onPhotoChange($event)" -->
       </div>
