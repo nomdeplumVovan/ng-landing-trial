@@ -307,17 +307,27 @@
 
   .main__relationships-skills {
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
   }
-
+.main__relationships-skills img{
+  margin: 26px 0 0 0;
+}
+  
   .main__relationships-html,
   .main__relationships-css,
   .main__relationships-javascript {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 605px;
+    height: 150px;
+    margin: 0;
   }
-
+  .main__skills-direction{
+    display: none;
+  }
   .main__skills-direction-tablet {
     display: flex;
     flex-direction: column;
