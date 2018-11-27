@@ -6,5 +6,5 @@ export class User {
   position: string;
   position_id: number;
   registration_timestamp: number;
-  photo: string;
+  photo: any;
 }

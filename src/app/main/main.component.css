@@ -1,5 +1,5 @@
 .background__header {
-  width: 1024px;
+  max-width: 1024px;
   height: 65px;
 }
 
@@ -161,6 +161,11 @@
   margin-bottom: 73px;
 }
 
+.main__skills-direction-tablet {
+  display: none;
+
+}
+
 .main__relationships-html {
   width: 286px;
   margin: 0 0 0 47px;
@@ -187,15 +192,16 @@
   width: 100px;
   height: 114px;
 }
-.main__relationships-skills
- .main__description-dev-h2{
-   line-height: 47px
- }
-.main__relationships-javascript
- .main__description-dev-h2 {
+
+.main__relationships-skills .main__description-dev-h2 {
+  line-height: 47px
+}
+
+.main__relationships-javascript .main__description-dev-h2 {
   margin-top: 11px;
 }
-.main__relationships-skills p{
+
+.main__relationships-skills p {
   font-family: 'Source Sans Pro';
   color: #4c4b4b;
   font-size: 16px;
@@ -203,13 +209,16 @@
   line-height: 22px;
   text-align: left;
 }
+
 .main__relationships-html p {
-margin-left: 2px;
+  margin-left: 2px;
 }
+
 .main__relationships-css p {
- width: 219px;
+  width: 219px;
 }
-.main__relationships-javascript p{
+
+.main__relationships-javascript p {
   width: 263px;
 }
 
@@ -240,11 +249,103 @@ margin-left: 2px;
 .main__requirements-description p {
   width: 449px;
   line-height: 22px;
-  margin: 0 53px 22px  0;
+  margin: 0 53px 22px 0;
 
 }
-.main__requirements-description img{
+
+.main__requirements-description img {
   width: 429px;
   height: 361px;
   margin: 16px 0 0 1px;
+}
+
+@media (max-width: 780px) {
+
+  .main__assigment {
+    width: 768px;
+    height: 622px;
+    background-size: 130%;
+  }
+
+  .main__assigment-h1 {
+    font-size: 42px;
+    width: 374px;
+    height: 141px;
+  }
+
+  .main__assigment-goodluck {
+    font-size: 18px;
+    line-height: 24px;
+    width: 382px;
+    height: 134px;
+  }
+
+  .main__assigment-button {
+    border-radius: 4px;
+    background-color: #ef6c00;
+    width: 290px;
+    height: 40px;
+  }
+.main__description{
+  width: 768px;
+}
+  .main__description-dev-h2 {
+    font-size: 26px;
+  }
+
+  .main__description-img {
+    width: 219px;
+    height: 216px;
+  }
+
+  .main__description-dev-about {
+    width: 456px;
+  }
+  .main__description-dev-about p{
+    width: 456px;
+  }
+
+  .main__relationships-skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__relationships-html,
+  .main__relationships-css,
+  .main__relationships-javascript {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main__skills-direction-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__skills-direction-tablet p {
+    width: 460px;
+  }
+
+  .main__requirements {
+    width: 768px;
+  }
+
+  .main__requirements img { 
+    width: 343px;
+    height: 407px;
+  }
+.main__requirements-description p {
+  width: 334px;
+  margin-right: 0;
+}
+
+
+
+}
+
+@media (max-width: 425px) {
+  .main__assigment {
+    width: 320px;
+  }
 }

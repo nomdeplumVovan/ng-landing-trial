@@ -1,13 +1,28 @@
 header {
-  width: 1024px;
-  height: 64px;
-  /* border: 1px solid green; */
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   position: fixed;
   background-color: white;
-  margin-top: -1px;
+  width: 1024px;
+  height: 64px;
+  margin-top: -2px;
+}
+
+.header__tablet {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 768px;
+  height: 64px;
+  margin-top: -2px;
+}
+.header__tablet i {
+  font-size: 24px;
+  color: rgb(14, 26, 116);
+  width: 24px;
+  height: 28px;
 }
 
 header a {
@@ -46,6 +61,7 @@ header a {
 .header__nav a {
   margin-right: 29px;
 }
+
 /* #about,
 #relationships,
 #requirements,
@@ -112,3 +128,20 @@ header a {
 .header__out-sign.png {
   display: none;
 }
+
+@media (max-width: 780px) {
+  header {
+    display: none;
+  }
+
+  .header__tablet {
+    display: flex;
+  }
+}
+  
+
+  @media (max-width: 425px) {
+    .header__tablet {
+      width: 320px;
+    }
+  }

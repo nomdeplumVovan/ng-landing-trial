@@ -25,7 +25,9 @@ export class AbzService {
   }
 
   getPositions() {
-      return this.http.get(`${this.endpoint}/api/v1/positions`);
+
+    return this.http.get(`${this.endpoint}/api/v1/positions`);
+
   }
 
 }

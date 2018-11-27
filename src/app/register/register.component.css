@@ -38,6 +38,7 @@ form {
   display: flex;
   margin-left: 40px;
   justify-content: flex-start;
+
 }
 
 fieldset {
@@ -47,7 +48,6 @@ fieldset {
   border-style: solid;
   width: 288px;
   height: 58px;
-
 }
 
 fieldset:first-child {
@@ -70,7 +70,7 @@ legend {
 
 .item-a {
   border: none;
-  background-color: white;
+  background-color: white !important;
   overflow: hidden;
   text-overflow: ellipsis;
   text-decoration: none;
@@ -82,6 +82,7 @@ fieldset input {
   width: 250px;
   height: 40px;
   outline: none;
+  
 }
 
 .item-d {
@@ -94,31 +95,57 @@ fieldset input {
   display: flex;
 }
 
+.position-photo {
+  height: 60px;
+}
+
 /* --стилизация caret-select----------- */
 select {
   font-size: 16px;
   padding-left: 12px;
+  cursor: pointer;
+  z-index: 1;
   background: transparent;
   border: none;
   outline: none;
-  margin: 0 32px 8px 0px;
+  /* position: relative; */
+  width: 436px;
+  height: 56px;
+  margin: 0 18px 0px 0px;
 }
 
 .register__select-caret {
+  display: flex;
+  align-items: center;
   width: 448px;
   overflow: hidden;
-  background: url(../../assets/icons/caret.png) no-repeat right;
+  background: url(../../assets/icons/caret.png) no-repeat;
+  background-position: 97% 50%;
   width: 448px;
   height: 54px;
-  margin: 0 30px 0px 12px;
+  margin: 0 30px 12px 6px;
+
 }
+
+#select-caret {
+  z-index: 5;
+  width: 200px;
+  height: 20px;
+  padding-left: 12px;
+  text-align: left;
+  position: absolute;
+  margin: auto 0;
+}
+
+
 
 /* ---стилизация инпута----------*/
 
-.upload__style{
+.upload__style {
   align-items: center;
   justify-content: flex-end;
 }
+
 .item-d input {
   width: 126px;
   height: 54px;
@@ -154,10 +181,11 @@ select {
   font-weight: 700;
   line-height: 50px;
   text-align: center;
-  background-color: white;
+  background-color: white !important;
 }
 
 /* ------------------------------------- */
+
 
 .register__user-warning {
   font-family: 'Source Sans Pro';
@@ -181,6 +209,7 @@ select {
   text-decoration: none;
   margin-bottom: 138px;
   outline: none;
+  margin: 0 0 140px 368px;
 }
 
 .item-d option {
@@ -190,4 +219,39 @@ select {
   font-weight: 400;
   text-align: left;
   outline: none;
+}
+
+@media (max-width: 780px) {
+.register{
+  width: 768px;
+}
+.register__h3{
+  width: 360px;
+  height: 40px;
+}
+.register__user{
+  width: 768px;
+}
+fieldset {
+  width: 220px;
+}
+
+fieldset input{
+  width: 203px;
+}
+.item-d{
+  width: 344px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
