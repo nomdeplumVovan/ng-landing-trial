@@ -263,9 +263,11 @@ select {
   input[ type="submit"] {
     margin: 0 230px 140px;
   }
-
+  .register__user.position-photo{
+    justify-content: space-evenly;
+  }
   .register__user-warning {
-    margin: 0 0 41px 400px;
+    margin: 0 0 41px 420px;
   }
 
 

@@ -19,13 +19,27 @@ header {
   margin-top: -2px;
 }
 
-/* .header__tablet i {
-  font-size: 24px;
-  color: rgb(14, 26, 116);
-  width: 24px;
-  height: 28px;
-} */
+.header__tablet-menu-button:hover .header__tablet-menu {
+  display: flex;
+}
 
+.header__tablet-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* border: 2px solid #283593; */
+  border-radius: 4px;
+  left: 50%;
+  top: 5%;
+  z-index: 60;
+   background-color: #f2f2f2;
+  width: 20vw;
+  height: 35vh;
+  margin: -5px 0 0 -140px;
+}
+.header__tablet-menu a,
 header a {
   display: flex;
   align-items: center;
@@ -36,6 +50,13 @@ header a {
   font-weight: 400;
 }
 
+.header__tablet-menu a:hover,
+header a:hover{
+  color:  rgba(239, 108, 0, 0.7);
+}
+.header__tablet-menu a{
+  margin: 25px  0 ;
+}
 .header__logo {
   display: flex;
   flex-direction: row;
