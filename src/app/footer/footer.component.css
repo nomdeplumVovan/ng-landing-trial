@@ -31,16 +31,16 @@ footer a {
 }
 
 .footer__logo a {
-  /* background-color: #ffffff; */
   background-image: url(../../assets/image/logoFooter.png);
   width: 134px;
   height: 24px;
   margin-left: 48px;
 }
-.footer__logo a:hover{
-  background-color: #ef6c00;
-} 
 
+.footer__logo a:hover {
+  background-image: url(../../assets/image/logo.svg);
+  background-size: 134px;
+}
 
 .footer__nav {
   display: flex;
@@ -55,12 +55,13 @@ footer a {
   margin-right: 29px;
 }
 
-/* --------------- */
+/* ----footer__links----------- */
 .footer__links,
 .footer__email {
   display: flex;
   flex-direction: column;
 }
+
 .footer__network,
 .footer__link,
 .footer__share {
@@ -70,12 +71,9 @@ footer a {
   text-align: right;
 
 }
-.footer__link{
-  margin: 23px 40px 0 0;
-}
 
-.footer__share{
-  margin: 15px 43px 0 0;
+.footer__link {
+  margin: 23px 40px 0 0;
 }
 
 .footer__email {
@@ -88,6 +86,7 @@ footer a {
   align-items: center;
   font-size: 20px;
   font-weight: 400;
+   margin-right: 10px;
 }
 
 .footer__mail,
@@ -99,7 +98,48 @@ footer a {
 .footer__email img {
   margin-right: 10px;
 }
+#footerMail{
+  background-image: url(../../assets/icons/mail.svg);
+  background-size: 23px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  height: 23px;
+  padding-left: 35px;
+}
+#footerMail:hover{
+  background-image: url(../../assets/icons/close-envelopeOr.svg);
+}
 
+#footerPhone{
+  background-image: url(../../assets/icons/phone.svg);
+  background-size: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  height: 23px;
+  padding-left: 35px;
+}
+#footerPhone:hover{
+  background-image: url(../../assets/icons/phone-call-buttonOr.svg);
+}
+#footerMobile{
+  background-image: url(../../assets/icons/cellphone.svg);
+  background-size: 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  height: 28px;
+  padding-left: 35px;
+}
+#footerMobile:hover{
+  background-image: url(../../assets/icons/cellphoneOr.svg);
+}
+
+
+
+
+/* --footer__network-- */
+.footer__share {
+  margin: 15px 43px 0 0;
+}
 
 .footer__links a {
   margin: 0px 6px 11px 6px;
@@ -110,38 +150,86 @@ footer a {
   margin-left: 48px;
   margin-top: 10px;
 }
-.footer__network img{
-margin-left: 20px;
-}
-a:hover img{
-  background-color: #ef6c00;
-  /* border-radius: 5px; */
-}
-img:hover{
-  background-color: #ef6c00;
-  border-radius: 7px;
+
+.footer__network a {
+  margin-left: 20px;
 }
 
+#pinterest {
+  background-image: url(../../assets/icons/pinterest.svg);
+  width: 26px;
+  height: 26px;
+}
 
-footer a:hover{
-color: #ef6c00;
+#pinterest:hover {
+  background-image: url(../../assets/icons/017-pinterest.svg);
+}
+
+#twitter {
+  background-image: url(../../assets/icons/twitter.svg);
+  width: 26px;
+  height: 26px;
+}
+
+#twitter:hover {
+  background-image: url(../../assets/icons/007-twitter-1.svg);
+}
+
+#instagram {
+  background-image: url(../../assets/icons/instagram.svg);
+  width: 26px;
+  height: 26px;
+}
+
+#instagram:hover {
+  background-image: url(../../assets/icons/020-instagram.svg);
+}
+
+#linkedin{
+  background-image: url(../../assets/icons/linkedin.svg);
+  width: 26px;
+  height: 26px;
+}
+#linkedin:hover{
+  background-image: url(../../assets/icons/019-linkedin.svg);
+}
+#facebook{
+  background-image: url(../../assets/icons/facebook.svg);
+  width: 26px;
+  height: 26px;
+}
+
+#facebook:hover{
+  background-image: url(../../assets/icons/023-facebook.svg);
 }
 
 
-@media (max-width: 780px){
-
-footer,
-.background__footer{
-  width: 768px;
-}
-.footer__nav{
-  width: 550px;
-}
-.footer__nav a {
-  margin-right: 9px;
+footer a:hover {
+  color: #ef6c00;
 }
 
 
+@media (max-width: 780px) {
 
+  footer,
+  .background__footer {
+    width: 768px;
+  }
+
+  .footer__nav {
+    width: 550px;
+  }
+
+  .footer__nav a {
+    margin-right: 9px;
+  }
+#footerMail,
+#footerPhone,
+#footerMobile,
+#footerMail:hover,
+#footerPhone:hover,
+#footerMobile:hover{
+  background: none;
+  padding-left: 0;
 }
-
+}
