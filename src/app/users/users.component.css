@@ -99,7 +99,7 @@
   width: 286px;
   height: 36px;
   outline: none;
-  margin:  7px 0 50px 7px ;
+  margin: 7px 0 50px 7px;
 
 }
 
@@ -107,18 +107,25 @@
   opacity: 0;
 }
 
-@media (max-width: 780px){
-  .users{
+@media (max-width: 780px) {
+  .background__header {
     width: 768px;
   }
-  .users__grid{
+
+  .users {
+    width: 768px;
+  }
+
+  .users__grid {
     grid-template-columns: 222px 222px 222px;
   }
-  .user{
+
+  .user {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .user__account,
   .user__name {
     align-items: center;

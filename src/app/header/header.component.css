@@ -18,12 +18,13 @@ header {
   height: 64px;
   margin-top: -2px;
 }
-.header__tablet i {
+
+/* .header__tablet i {
   font-size: 24px;
   color: rgb(14, 26, 116);
   width: 24px;
   height: 28px;
-}
+} */
 
 header a {
   display: flex;
@@ -129,6 +130,14 @@ header a {
   display: none;
 }
 
+.header__tablet-menu-button {
+  background-image: url(../../assets/icons/line-menu.png);
+  background-size: contain;
+  margin: 0 40px;
+  width: 23px;
+  height: 22px;
+}
+
 @media (max-width: 780px) {
   header {
     display: none;
@@ -138,10 +147,10 @@ header a {
     display: flex;
   }
 }
-  
 
-  @media (max-width: 425px) {
-    .header__tablet {
-      width: 320px;
-    }
+
+@media (max-width: 425px) {
+  .header__tablet {
+    width: 320px;
   }
+}

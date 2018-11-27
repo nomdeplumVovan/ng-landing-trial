@@ -25,6 +25,7 @@ footer a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer__logo img {
@@ -109,11 +110,16 @@ margin-left: 20px;
 
 @media (max-width: 780px){
 
-footer{
-  width: 1024px;
+footer,
+.background__footer{
+  width: 768px;
 }
-
-
+.footer__nav{
+  width: 600px;
+}
+.footer__nav a {
+  margin-right: 9px;
+}
 
 
 

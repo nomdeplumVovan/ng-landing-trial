@@ -82,7 +82,7 @@ fieldset input {
   width: 250px;
   height: 40px;
   outline: none;
-  
+
 }
 
 .item-d {
@@ -222,28 +222,51 @@ select {
 }
 
 @media (max-width: 780px) {
-.register{
-  width: 768px;
-}
-.register__h3{
-  width: 360px;
-  height: 40px;
-}
-.register__user{
-  width: 768px;
-}
-fieldset {
-  width: 220px;
-}
+  .background__header {
+    width: 768px;
+  }
 
-fieldset input{
-  width: 203px;
-}
-.item-d{
-  width: 344px;
-}
+  .register {
+    width: 768px;
+  }
 
+  .register__h3 {
+    width: 360px;
+    height: 40px;
+  }
 
+  form {
+    width: 768px;
+  }
+
+  .register__user {
+    width: 750px;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+
+  fieldset:first-child,
+  fieldset:nth-child(2),
+  fieldset {
+    width: 220px;
+    margin: 0 10px 42px;
+  }
+
+  fieldset input {
+    width: 203px;
+  }
+
+  .item-d {
+    width: 344px;
+  }
+
+  input[ type="submit"] {
+    margin: 0 230px 140px;
+  }
+
+  .register__user-warning {
+    margin: 0 0 41px 400px;
+  }
 
 
 
