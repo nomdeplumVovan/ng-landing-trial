@@ -32,6 +32,7 @@ footer a {
 
 .footer__logo a {
   background-image: url(../../assets/image/logoFooter.png);
+  /* background-repeat: no-repeat; */
   width: 134px;
   height: 24px;
   margin-left: 48px;
