@@ -100,9 +100,16 @@
   height: 36px;
   outline: none;
   margin: 7px 0 50px 7px;
-
+}
+.showMore:hover{
+  color:  #fc831f;
+  background-color:  rgba(252, 131, 31, 0.2);
+  cursor: pointer;
 }
 
+ .user a:hover{
+  color: #ef6c00;
+ }
 .disabled {
   opacity: 0;
 }

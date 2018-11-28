@@ -17,19 +17,9 @@ export class RegisterComponent implements OnInit {
   position: Position;
   public selectedFile: any = 'Upload your photo';
   selectedPosition: any = 'Select your position ';
-
+  styleSelectedFile: String = ' color: rgb(141, 140, 140);';
   myForm: FormGroup;
-  // myForm = new FormGroup({
-  //   userName: new FormControl('', Validators.required),
-  //   userEmail: new FormControl('', [Validators.required,
-  //   Validators.pattern('^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$')]),
 
-  //   userPhone: new FormControl('', [Validators.required,
-  //   Validators.pattern('^[\+]{0,1}380([0-9]{9})$')]),
-
-  //   userPositionId: new FormControl('', Validators.required),
-  //   userPhoto: new FormControl('', Validators.required)
-  // });
 
   photoControl = new FormControl;
   filename: any;
@@ -54,11 +44,13 @@ export class RegisterComponent implements OnInit {
     this.filename = this.photoControl.value;
     if (this.filename !== null) {
       console.log(this.filename);
+      this.styleSelectedFile = 'color: rgb(239, 108, 0);';
       return this.selectedFile = this.filename.replace(/.*\\/, '');
     }
   }
   onPositionChange() {
-   this.selectedPosition = '';
+    this.selectedPosition = '';
+
   }
 
   uploadImage() {

@@ -61,14 +61,22 @@ header a:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
+  }
+
+.header__logo a{
+  background-image: url(../../assets/image/logo.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 134px;
   width: 134px;
   height: 64px;
-  padding: 3px 67px 0 48px;
+  margin: 3px 67px 0 48px;
 }
 
-.header__logo img {
-  width: 136px;
-  height: 24px;
+
+.header__logo a:hover {
+  background-image: url(../../assets/image/logoOr.svg);
+  /* background-size: 136px; */
 }
 
 .header__nav {
