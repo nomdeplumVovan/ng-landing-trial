@@ -20,6 +20,15 @@ export class RegisterComponent implements OnInit {
   styleSelectedFile: String = ' color: rgb(141, 140, 140);';
   myForm: FormGroup;
 
+  validColor = '#b7b7b7 ';
+  invalidColor = '#f44336';
+  validNameColor = this.validColor;
+  validNameBorderColor = this.validColor;
+  validMailColor = this.validColor;
+  validMailBorderColor = this.validColor;
+  validPlaceholderMail = 'Your email';
+
+
 
   photoControl = new FormControl;
   filename: any;
@@ -56,6 +65,21 @@ export class RegisterComponent implements OnInit {
   uploadImage() {
     return this.onPhotoChange();
   }
+  validationInput() {
+    if (this.myForm.controls['userName'].invalid && this.myForm.controls['userName'].touched) {
+
+      this.validNameColor = this.invalidColor;
+      this.validNameBorderColor = this.invalidColor;
+      console.log('this.invalidColor :' + this.invalidColor );
+    }
+    if (this.myForm.controls['userEmail'].invalid && this.myForm.controls['userEmail'].touched) {
+      // this.validPlaceholderMail = 'Error';
+      this.validMailColor = this.invalidColor;
+      this.validMailBorderColor = this.invalidColor;
+    }
+  }
+
+
 
   onSubmit() {
     console.log(this.myForm);
@@ -73,7 +97,7 @@ export class RegisterComponent implements OnInit {
       userPosition: new FormControl(),
       userPhoto: new FormControl()
     });
-
+ this.validationInput();
   }
 
 }

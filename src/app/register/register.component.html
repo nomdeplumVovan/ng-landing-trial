@@ -8,37 +8,37 @@
   <form action="#" name="register-form"  novalidate   [formGroup]="myForm" (ngSubmit)="onSubmit()">
       <!-- (ngSubmit)="submit()" -->
     <div class="register__user">
-      <fieldset>
-        <legend>Name</legend>
-        <input type="text" placeholder="Your name" class="item-a form-control" name="userName"
-         maxlength="100"  formControlName="userName">
+      <fieldset (blur)="validationInput()" [style.color]='validNameColor' [style.borderColor]='validNameBorderColor'>
+        <legend  [style.color]='validNameColor'>Name</legend>
+        <input type="text" placeholder="Your name" class="item-a form-control alert alert-danger" name="userName"
+                     maxlength="100"          formControlName="userName"    >
         <div *ngIf="myForm.controls['userName'].invalid && myForm.controls['userName'].touched"
-         class="alert alert-danger" style="color:crimson">
-          name invalid
-        </div>
+         class="alert alert-danger" style="color:#f44336; font-size: 12px; margin-top: 5px;"> 
+          Error
+      </div>
       </fieldset>
 
 
-      <fieldset>
-        <legend>Email</legend>
-        <input class="item-a form-control" name="userEmail" placeholder="Your email" 
+      <fieldset [style.color]='validMailColor' [style.borderColor]='validMailBorderColor' (blur)="validationInput()">
+        <legend [style.color]='validNameColor'>Email</legend>
+        <input class="item-a form-control" name="userEmail" [placeholder]="validPlaceholderMail" 
            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" 
            formControlName="userEmail"/>
         <div *ngIf="myForm.controls['userEmail'].invalid && myForm.controls['userEmail'].touched"
-         class="alert alert-danger" style="color:crimson">
-          email invalid
+         class="alert alert-danger" style="color:#f44336; font-size: 12px; margin-top: 5px;">
+         Error
         </div>
       </fieldset>
 
 
-      <fieldset>
-        <legend>Phone</legend>
+      <fieldset >
+        <legend [style.color]='validNameColor'>Phone</legend>
         <input class="item-a form-control" name="userPhone" 
          pattern="^[\+]{0,1}380([0-9]{9})$"
          placeholder="+380..."  formControlName="userPhone"/>
         <div *ngIf="myForm.controls['userPhone'].invalid && myForm.controls['userPhone'].touched"
-         class="alert alert-danger" style="color:crimson">
-          phone invalid
+         class="alert alert-danger" style="color:#f44336; font-size: 12px; margin-top: 5px;">
+         Error
         </div>
       </fieldset>
 
@@ -47,8 +47,9 @@
     <div class="register__user position-photo">
       <div class="register__select-caret item-d">
         <label for="selectPosition" id="select-caret">{{selectedPosition}}
-          <div *ngIf="myForm.controls['userPosition'].invalid && myForm.controls['userPosition'].touched" class="alert alert-danger" style="color:crimson">
-            position invalid  
+          <div *ngIf="myForm.controls['userPosition'].invalid && myForm.controls['userPosition'].touched" class="alert alert-danger"
+           style="color:#f44336; font-size: 12px; ">
+              Error 
           </div>
         </label> 
         <select  required name="userPosition"    id="selectPosition"  formControlName="userPosition" (ngModelChange)="onPositionChange()">
@@ -62,8 +63,8 @@
       <div class="item-d upload__style">
         <label [style]='styleSelectedFile'>{{selectedFile}}
           <div *ngIf="myForm.controls['userPhoto'].invalid && myForm.controls['userPhoto'].touched" 
-          class="alert alert-danger" style="color:crimson">
-            photo invalid
+          class="alert alert-danger" style="color:#f44336; font-size: 12px; ">
+          Error
           </div>
         </label> 
         <input type="file" name="userPhoto" id="input__file" class="item-d__input" accept="image/jpeg,image/png,image/gif"
